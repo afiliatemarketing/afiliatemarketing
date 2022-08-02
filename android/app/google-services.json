@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050626475765",
+    "project_id": "olbs-a2b2c",
+    "storage_bucket": "olbs-a2b2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050626475765:android:7c600f2cf315849c5b27bc",
+        "android_client_info": {
+          "package_name": "com.example.olbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050626475765-c9dp457vs9r3h0tffccl1bn5nqgb649f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMQ6KN5Yde22Yeo_ScWgZ-SGE6GUx7cXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050626475765-c9dp457vs9r3h0tffccl1bn5nqgb649f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
