@@ -1,35 +1,43 @@
-
 import 'package:flutter/material.dart';
-import 'package:olbs/screens/login_screen.dart';
+import 'package:introduction_screen/introduction_screen.dart';
 
-class LandingScreen extends StatefulWidget {
-  const LandingScreen({Key? key}) : super(key: key);
+import '../widgets/intro_screen_widget/introduction_screen.dart';
 
-  @override
-  _LandingScreenState createState() => _LandingScreenState();
-}
 
-class _LandingScreenState extends State<LandingScreen> {
+class IntroScreen extends StatelessWidget {
+  const IntroScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const FlutterLogo(size: 200,),
-            ElevatedButton(onPressed: (){
+      body:  IntroductionScreen(
+        initialPage: 1,
+        showDoneButton: false,
+        showNextButton: true,
+        showSkipButton: false,
+        showBackButton: true,
 
-              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context){
-                return const LoginScreen();
-              }));
+        next: ElevatedButton(onPressed: (){}, child: const Text('Next')),
+        back: ElevatedButton(onPressed: (){}, child: const Text('Back')),
 
-            }, child: const Text('Enter'))
-          ],
-        ),
+        pages: [
+          PageViewModel(
+              title:  'Page 1',
+              body: 'lalal'
+          ),
+
+          PageViewModel(
+              title:  'Page 2',
+              body: 'lala'
+          ),
+
+          PageViewModel(
+              title:  'Page 3',
+              body: 'lala'
+          ),
+
+
+        ],
       ),
     );
   }

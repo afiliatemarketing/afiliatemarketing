@@ -41,6 +41,7 @@ dependencies:
   intl:
   fluttertoast:
   ndialog:
+  introduction_screen: ^3.0.2
 
 dev_dependencies:
   flutter_test:
